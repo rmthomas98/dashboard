@@ -3,7 +3,7 @@ import Dashboard from "./Dashboard";
 
 const App = () => {
   return (
-    <div className="App font-sans bg-neutral-800 h-screen flex">
+    <div className="App font-sans bg-slate-900 h-full flex">
       <Nav />
       <Dashboard />
     </div>
