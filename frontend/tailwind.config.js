@@ -6,7 +6,7 @@ module.exports = {
         'main-background': 'linear-gradient(#00000075, #00000075), url("./assets/images/bg.jpg")',
       },
       boxShadow: {
-        'nav-shadow': '2px 0px 15px #22d3eed7',
+        'nav-shadow': '2px 0px 15px #ffffff',
         'notification-shadow': '0px 0px 10px #a855f7',
         'email-shadow': '0px 0px 10px #d946ef'
       },

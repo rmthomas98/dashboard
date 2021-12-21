@@ -19,8 +19,8 @@ const TopNav = () => {
   return (
     <div className="w-full pl-8 pr-8 p-6 flex justify-between">
       <div>
-        <p className="text-white font-semibold text-3xl">Your Dashboard</p>
-        <p className="text-md font-thin text-neutral-400">
+        <p className="text-white font-semibold text-3xl pb-1">Account Overview</p>
+        <p className="text-sm font-medium text-neutral-400">
           {format(time, "MMMM, dd h:mm:ss aa")}
         </p>
       </div>

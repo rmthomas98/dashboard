@@ -1,7 +1,6 @@
 import React from 'react';
 import graph from "./assets/images/graph.svg";
 import {
-  HouseDoor,
   Box,
   GraphUpArrow,
   Grid,
@@ -19,7 +18,7 @@ import {
 const Nav = () => {
 
   return (
-    <div className="bg-slate-800 border-opacity-25 w-72 min-w-fit min-h-screen shadow-nav-shadow">
+    <div className="bg-slate-800 border-opacity-25 w-72 min-w-fit h-screen overflow-y-auto">
       <div className="flex align-middle justify-center border-b border-neutral-100/20 m-4 mb-2 pb-6">
         <img src={graph} className="h-12 mr-1" />
         <p className="text-3xl text-center font-thin text-white relative top-1">
