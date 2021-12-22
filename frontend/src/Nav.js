@@ -1,5 +1,4 @@
 import React from 'react';
-import graph from "./assets/images/graph.svg";
 import {
   Box,
   GraphUpArrow,
@@ -12,17 +11,18 @@ import {
   HouseDoorFill,
   Chat,
   Calendar,
-  Telephone
+  Telephone,
+  LayersHalf
 } from "react-bootstrap-icons";
 
 const Nav = () => {
 
   return (
-    <div className="bg-slate-800 border-opacity-25 w-72 min-w-fit h-screen overflow-y-auto">
-      <div className="flex align-middle justify-center border-b border-neutral-100/20 m-4 mb-2 pb-6">
-        <img src={graph} className="h-12 mr-1" />
+    <div className="bg-gradient-to-r from-slate-800 to-slate-700 border-opacity-25 w-72 min-w-fit h-screen overflow-y-auto pb-4 sticky top-0 scrollbar-hide shadow-nav-shadow">
+      <div className="flex items-center justify-center border-b border-neutral-100/20 m-4 mb-2 pb-6">
+        <LayersHalf className='text-violet-400 relative top-1 mr-2' size={30}/>
         <p className="text-3xl text-center font-thin text-white relative top-1">
-          Instant<span className=" text-cyan-400">Dash</span>
+          Admin<span className=" text-violet-400">View</span>
         </p>
       </div>
       
@@ -31,7 +31,7 @@ const Nav = () => {
           Main
         </p>
         <p className="text-white font-medium cursor-pointer p-3 pl-4f flex align-middle">
-          <HouseDoorFill className="relative left-1 top-1 mr-3 text-cyan-400" />
+          <HouseDoorFill className="relative left-1 top-1 mr-3 text-violet-400" />
           <span>Dashboard</span>
         </p>
         <p className="text-neutral-400 font-medium cursor-pointer p-3 pl-4 flex align-middle hover:text-white transition-all">
