@@ -5,6 +5,7 @@ import {
   Tooltip,
   Pie,
   LabelList,
+  Legend,
 } from "recharts";
 
 const PieChart = () => {
@@ -18,7 +19,7 @@ const PieChart = () => {
   return (
     <div className="w-2/5 bg-slate-300 rounded-lg p-4 bg-gradient-to-r from-slate-600 to-slate-800">
       <p className="text-white font-medium">Traffic Soure Analytics</p>
-      <div className="flex pt-2">
+      {/* <div className="flex pt-2">
         <p className="flex items-center mr-4">
           <span className="h-2 w-2 rounded-full bg-indigo-500 block mr-1"></span>
           <span className="text-sm text-white font-thin">Google</span>
@@ -35,8 +36,8 @@ const PieChart = () => {
           <span className="h-2 w-2 rounded-full bg-rose-500 block mr-1 shadow-md "></span>
           <span className="text-sm text-white font-thin">Youtube</span>
         </p>
-      </div>
-      <div className="h-64 w-11/12 mx-auto mt-6 drop-shadow-2xl">
+      </div> */}
+      <div className="h-72 w-11/12 mx-auto mt-6 drop-shadow-2xl">
         <ResponsiveContainer>
           <PieCharter>
             <Pie
@@ -53,6 +54,7 @@ const PieChart = () => {
               fontWeight={500}
             />
             <Tooltip content={<CustomTooltip />} />
+            <Legend iconType={'circle'} iconSize={10}/>
           </PieCharter>
         </ResponsiveContainer>
       </div>
