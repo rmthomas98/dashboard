@@ -4,7 +4,7 @@ const Sales = () => {
   return (
     <div className="h-72 w-full bg-gradient-to-r from-slate-600 to-slate-800 rounded-lg mr-6 p-4">
       <p className="text-white font-medium">Sales Volume (Monthly)</p>
-      <div className="h-sales-monthly flex items-end justify-between">
+      <div className="h-fill-container flex items-end justify-between">
         <div className="flex flex-col items-center">
           <div className="h-16 w-6 bg-gradient-to-br from-indigo-400 to-indigo-800 rounded-md after:content-['$400'] after:text-white after:text-sm after:font-medium after:relative after:bottom-10 after:right-5 after:bg-slate-900/75 after:pt-2 after:pb-2 after:pl-4 after:pr-4 after:transition after:rounded-md after:opacity-0 hover:after:opacity-100"></div>
           <p className="text-sm mt-2 font-thin text-white">Jun</p>

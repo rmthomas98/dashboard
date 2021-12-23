@@ -6,7 +6,7 @@ import RowThreeFlexContainer from "./RowThreeFlexContainer";
 
 const Dashboard = () => {
   return (
-    <div className="w-full mx-auto max-w-dashboard-container">
+    <div className="w-full mx-auto max-w-dashboard-container pb-10">
       <TopNav />
       <Overview />
       <Visualizers />

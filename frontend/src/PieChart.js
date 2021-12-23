@@ -16,7 +16,7 @@ const PieChart = () => {
   ];
 
   return (
-    <div className="w-2/5 bg-slate-300 rounded-lg p-4 bg-gradient-to-r from-slate-600 to-slate-800 ">
+    <div className="w-2/5 bg-slate-300 rounded-lg p-4 bg-gradient-to-r from-slate-600 to-slate-800">
       <p className="text-white font-medium">Traffic Soure Analytics</p>
       <div className="flex pt-2">
         <p className="flex items-center mr-4">

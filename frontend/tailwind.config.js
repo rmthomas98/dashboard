@@ -15,8 +15,11 @@ module.exports = {
         "dashboard-container": "1400px",
       },
       height: {
-        "sales-monthly": "calc(100% - 24px)",
+        "fill-container": "calc(100% - 24px)",
       },
+      boxShadow: {
+        'account-bar': '0px 0px 15px'
+      }
     },
   },
   plugins: [require("tailwind-scrollbar-hide")],
