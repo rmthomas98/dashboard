@@ -2,6 +2,7 @@ import React from "react";
 import TopNav from "./TopNav";
 import Overview from "./Overview";
 import Visualizers from "./Visualizers";
+import RowThreeFlexContainer from "./RowThreeFlexContainer";
 
 const Dashboard = () => {
   return (
@@ -9,6 +10,7 @@ const Dashboard = () => {
       <TopNav />
       <Overview />
       <Visualizers />
+      <RowThreeFlexContainer />
     </div>
   );
 };

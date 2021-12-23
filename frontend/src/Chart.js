@@ -35,7 +35,9 @@ const Chart = () => {
   return (
     <div className="w-3/5 mr-6 bg-gradient-to-r from-slate-600 to-slate-800 h-96 rounded-lg p-4  flex flex-col justify-between">
       <p className="text-white font-medium">
-        Sales This Week $2,650.00 (+28.55% compared to the previous week)
+        Sales This Week $2,650.00 (
+        <span className="text-emerald-400">+28.55%</span> compared to the
+        previous week)
       </p>
       <div className="h-80">
         <ResponsiveContainer>
@@ -46,7 +48,14 @@ const Chart = () => {
                 <stop offset="95%" stopColor="#a78bfa" stopOpacity={0} />
               </linearGradient>
             </defs>
-            <Area type="monotone" dataKey="sales" strokeWidth={2} stroke="#a78bfa" fillOpacity={1} fill="url(#colorUv)"/>
+            <Area
+              type="monotone"
+              dataKey="sales"
+              strokeWidth={2}
+              stroke="#a78bfa"
+              fillOpacity={1}
+              fill="url(#colorUv)"
+            />
             <XAxis
               dataKey="date"
               tickLine={false}
@@ -65,9 +74,9 @@ const Chart = () => {
               tickFormatter={(value) => `$${value}`}
               domain={["dataMin", "dataMax"]}
               ticks={[200, 300, 400, 500, 600]}
-              padding={{bottom: 10}}
+              padding={{ bottom: 10 }}
             />
-            <Tooltip content={<CustomTooltip />}/>
+            <Tooltip content={<CustomTooltip />} cur />
           </AreaChart>
         </ResponsiveContainer>
       </div>

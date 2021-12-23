@@ -34,7 +34,7 @@ const Overview = () => {
           This Month<span>$4,700</span>
         </p>
       </div>
-      <div className="shadow-xl shadow-emerald-600/50 shadow-netrual-900 bg-gradient-to-r from-emerald-400 to-emerald-800 w-full rounded-lg p-4">
+      <div className="shadow-xl shadow-rose-600/50 shadow-netrual-900 bg-gradient-to-r from-rose-400 to-rose-800 w-full rounded-lg p-4">
         <p className="font-medium">Total Profit</p>
         <div className="p-2 pt-4 pb-4 flex justify-between items-center">
           <Wallet2 size={30} />
