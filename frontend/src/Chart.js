@@ -76,7 +76,7 @@ const Chart = () => {
               ticks={[200, 300, 400, 500, 600]}
               padding={{ bottom: 10 }}
             />
-            <Tooltip content={<CustomTooltip />} cur />
+            <Tooltip content={<CustomTooltip />} cursor={{strokeWidth: 0.5, color: '#ffffff41'}} />
           </AreaChart>
         </ResponsiveContainer>
       </div>
