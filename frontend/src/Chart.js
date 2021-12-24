@@ -19,28 +19,15 @@ const data = [
 ];
 
 const Chart = () => {
-  const [display, setDisplay] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setDisplay(true);
-    }, 500);
-  }, []);
-
-  // if (!display)
-  //   return (
-  //     <div className="w-3/5 mr-6 bg-gradient-to-r from-slate-600 to-slate-800 h-96 rounded-lg p-4 shadow-xl shadow-slate-600/50"></div>
-  //   );
-
   return (
-    <div className="w-3/5 mr-6 bg-gradient-to-r from-slate-600 to-slate-800 h-96 rounded-lg p-4  flex flex-col justify-between">
+    <div className="w-full bg-gradient-to-r from-slate-600 to-slate-800 h-96 rounded-lg p-4  flex flex-col justify-between tablet:w-3/5 tablet:mr-6">
       <p className="text-white font-medium">
         Sales This Week $2,650.00 (
         <span className="text-emerald-400">+28.55%</span> compared to the
         previous week)
       </p>
       <div className="h-80">
-        <ResponsiveContainer>
+        <ResponsiveContainer width="99%">
           <AreaChart data={data} margin={{ left: -10 }}>
             <defs>
               <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
@@ -63,6 +50,7 @@ const Chart = () => {
               stroke="#ffffffa1"
               fontSize={12}
               tickMargin={10}
+              minTickGap={0}
             />
             <YAxis
               dataKey="sales"
@@ -76,7 +64,10 @@ const Chart = () => {
               ticks={[200, 300, 400, 500, 600]}
               padding={{ bottom: 10 }}
             />
-            <Tooltip content={<CustomTooltip />} cursor={{strokeWidth: 0.5, color: '#ffffff41'}} />
+            <Tooltip
+              content={<CustomTooltip />}
+              cursor={{ strokeWidth: 0.5, color: "#ffffff41" }}
+            />
           </AreaChart>
         </ResponsiveContainer>
       </div>

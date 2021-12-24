@@ -6,16 +6,16 @@ import {
   Pie,
 } from "recharts";
 
-const PieChart = () => {
-  const data = [
-    { name: "Google", value: 1250, fill: "#6366f1" },
-    { name: "Ads", value: 1000, fill: "#8b5cf6" },
-    { name: "Socials", value: 700, fill: "#d946ef" },
-    { name: "Youtube", value: 400, fill: "#f43f5e" },
-  ];
+const data = [
+  { name: "Google", value: 1250, fill: "#6366f1" },
+  { name: "Ads", value: 1000, fill: "#8b5cf6" },
+  { name: "Socials", value: 700, fill: "#d946ef" },
+  { name: "Youtube", value: 400, fill: "#f43f5e" },
+];
 
+const PieChart = () => {
   return (
-    <div className="w-2/5 bg-slate-300 rounded-lg p-4 bg-gradient-to-r from-slate-600 to-slate-800 flex flex-col justify-between">
+    <div className="w-2/5 bg-slate-300 rounded-lg p-4 bg-gradient-to-r from-slate-600 to-slate-800 flex-col justify-between hidden tablet:flex">
       <p className="text-white font-medium">Traffic Source Analytics</p>
       <div className="h-60 w-11/12 mx-auto mt-6 drop-shadow-2xl flex flex-col justify-between">
         <ResponsiveContainer>

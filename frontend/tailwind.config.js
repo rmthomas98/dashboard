@@ -19,6 +19,10 @@ module.exports = {
         "fill-container": "calc(100% - 24px)",
       },
     },
+    screens: {
+      tablet: "1124px",
+      xl: "1280px",
+    },
   },
   plugins: [require("tailwind-scrollbar-hide")],
 };

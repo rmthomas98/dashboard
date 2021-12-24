@@ -2,7 +2,7 @@ import React from "react";
 
 const Sales = () => {
   return (
-    <div className="h-72 w-full bg-gradient-to-r from-slate-600 to-slate-800 rounded-lg mr-6 p-4">
+    <div className="h-72 w-full bg-gradient-to-r from-slate-600 to-slate-800 rounded-lg mr-6 p-4 hidden tablet:block">
       <p className="text-white font-medium">Sales Volume (Monthly)</p>
       <div className="h-fill-container flex items-end justify-between">
         <div className="flex flex-col items-center">

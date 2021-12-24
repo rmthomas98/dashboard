@@ -3,7 +3,7 @@ import { CaretUpFill } from "react-bootstrap-icons";
 
 const Balances = () => {
   return (
-    <div className="w-full h-72 bg-gradient-to-r from-slate-600 to-slate-800 rounded-lg mr-6 p-4">
+    <div className="w-full h-72 bg-gradient-to-r from-slate-600 to-slate-800 rounded-lg p-4 mb-6 tablet:mr-6 tablet:mb-0">
       <div className="h-full flex flex-col justify-between">
         <p className="font-medium text-white pb-4">Account Balances</p>
         <div>
