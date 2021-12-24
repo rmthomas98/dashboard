@@ -17,27 +17,9 @@ const PieChart = () => {
   ];
 
   return (
-    <div className="w-2/5 bg-slate-300 rounded-lg p-4 bg-gradient-to-r from-slate-600 to-slate-800">
+    <div className="w-2/5 bg-slate-300 rounded-lg p-4 bg-gradient-to-r from-slate-600 to-slate-800 flex flex-col justify-between">
       <p className="text-white font-medium">Traffic Soure Analytics</p>
-      {/* <div className="flex pt-2">
-        <p className="flex items-center mr-4">
-          <span className="h-2 w-2 rounded-full bg-indigo-500 block mr-1"></span>
-          <span className="text-sm text-white font-thin">Google</span>
-        </p>
-        <p className="flex items-center mr-4">
-          <span className="h-2 w-2 rounded-full bg-violet-500 block mr-1 shadow-md "></span>
-          <span className="text-sm text-white font-thin">Ads</span>
-        </p>
-        <p className="flex items-center mr-4">
-          <span className="h-2 w-2 rounded-full bg-fuchsia-500 block mr-1 shadow-md "></span>
-          <span className="text-sm text-white font-thin">Socials</span>
-        </p>
-        <p className="flex items-center mr-4">
-          <span className="h-2 w-2 rounded-full bg-rose-500 block mr-1 shadow-md "></span>
-          <span className="text-sm text-white font-thin">Youtube</span>
-        </p>
-      </div> */}
-      <div className="h-72 w-11/12 mx-auto mt-6 drop-shadow-2xl">
+      <div className="h-60 w-11/12 mx-auto mt-6 drop-shadow-2xl flex flex-col justify-between">
         <ResponsiveContainer>
           <PieCharter>
             <Pie
@@ -54,9 +36,26 @@ const PieChart = () => {
               fontWeight={500}
             />
             <Tooltip content={<CustomTooltip />} />
-            <Legend iconType={'circle'} iconSize={10}/>
           </PieCharter>
         </ResponsiveContainer>
+      </div>
+      <div className="flex pt-2 justify-center">
+        <p className="flex items-center mr-4">
+          <span className="h-2 w-2 rounded-full bg-indigo-500 block mr-1"></span>
+          <span className="text-sm text-white font-thin">Google</span>
+        </p>
+        <p className="flex items-center mr-4">
+          <span className="h-2 w-2 rounded-full bg-violet-500 block mr-1 shadow-md "></span>
+          <span className="text-sm text-white font-thin">Ads</span>
+        </p>
+        <p className="flex items-center mr-4">
+          <span className="h-2 w-2 rounded-full bg-fuchsia-500 block mr-1 shadow-md "></span>
+          <span className="text-sm text-white font-thin">Socials</span>
+        </p>
+        <p className="flex items-center mr-4">
+          <span className="h-2 w-2 rounded-full bg-rose-500 block mr-1 shadow-md "></span>
+          <span className="text-sm text-white font-thin">Youtube</span>
+        </p>
       </div>
     </div>
   );

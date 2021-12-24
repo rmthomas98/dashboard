@@ -10,6 +10,7 @@ module.exports = {
         "nav-shadow": "2px 0px 15px #8b5cf6",
         "notification-shadow": "0px 0px 10px #a855f7",
         "email-shadow": "0px 0px 10px #d946ef",
+        "account-bar": "0px 0px 15px",
       },
       maxWidth: {
         "dashboard-container": "1400px",
@@ -17,9 +18,6 @@ module.exports = {
       height: {
         "fill-container": "calc(100% - 24px)",
       },
-      boxShadow: {
-        'account-bar': '0px 0px 15px'
-      }
     },
   },
   plugins: [require("tailwind-scrollbar-hide")],

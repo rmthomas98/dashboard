@@ -11,7 +11,7 @@ const Balances = () => {
             <p className="text-white font-thin text-sm pb-2">
               Marketing Budget
             </p>
-            <p className="text-right text-xs font-thin mb-1 p-1 rounded-md text-violet-400 bg-slate-900/50">
+            <p className="text-right text-xs font-thin mb-1 p-1 rounded-md text-violet-400 ">
               $25,000 / $50,000
             </p>
           </div>
@@ -26,11 +26,9 @@ const Balances = () => {
           </div>
         </div>
         <div>
-        <div className="flex justify-between w-full">
-            <p className="text-white font-thin text-sm pb-2">
-              Credit Line
-            </p>
-            <p className="text-right text-xs font-thin mb-1 p-1 rounded-md text-fuchsia-400 bg-slate-900/50">
+          <div className="flex justify-between w-full">
+            <p className="text-white font-thin text-sm pb-2">Credit Line</p>
+            <p className="text-right text-xs font-thin mb-1 p-1 rounded-md text-fuchsia-400 ">
               $30,000 / $40,000
             </p>
           </div>
@@ -45,11 +43,9 @@ const Balances = () => {
           </div>
         </div>
         <div>
-        <div className="flex justify-between w-full">
-            <p className="text-white font-thin text-sm pb-2">
-              Cash Available
-            </p>
-            <p className="text-right text-xs font-thin mb-1 p-1 rounded-md text-rose-400 bg-slate-900/50">
+          <div className="flex justify-between w-full">
+            <p className="text-white font-thin text-sm pb-2">Cash Available</p>
+            <p className="text-right text-xs font-thin mb-1 p-1 rounded-md text-rose-400">
               $5,000 / $25,000
             </p>
           </div>
