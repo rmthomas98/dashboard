@@ -2,7 +2,8 @@ import React from "react";
 import TopNav from "./TopNav";
 import Overview from "./Overview";
 import Visualizers from "./Visualizers";
-import RowThreeFlexContainer from "./RowThreeFlexContainer";
+import RowFlexContainer from "./RowFlexContainer";
+import LastRow from "./LastRow";
 
 const Dashboard = () => {
   return (
@@ -10,7 +11,8 @@ const Dashboard = () => {
       <TopNav />
       <Overview />
       <Visualizers />
-      <RowThreeFlexContainer />
+      <RowFlexContainer />
+      <LastRow />
     </div>
   );
 };

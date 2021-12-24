@@ -5,7 +5,7 @@ import MonthlyExpenses from "./MonthlyExpenses";
 
 const RowThreeFlexContainer = () => {
   return (
-    <div className="flex justify-between pl-8 pr-8 w-full">
+    <div className="flex justify-between pl-8 pr-8 pb-8 w-full">
       <Sales />
       <Balances />
       <MonthlyExpenses />
