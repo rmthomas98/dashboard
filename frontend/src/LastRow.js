@@ -4,7 +4,7 @@ import Transactions from "./Transactions";
 
 const LastRow = () => {
   return (
-    <div className="flex justify-between pl-8 pr-8 w-full">
+    <div className="flex justify-between pl-8 pr-8 w-full flex-col tablet:flex-row">
       <Orders />
       <Transactions />
     </div>

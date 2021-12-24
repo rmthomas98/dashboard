@@ -2,7 +2,7 @@ import React from "react";
 
 const Orders = () => {
   return (
-    <div className="w-full mr-6 rounded-lg h-96 bg-gradient-to-r from-slate-600 to-slate-800 p-4 flex flex-col justify-between">
+    <div className="w-full rounded-lg h-96 bg-gradient-to-r from-slate-600 to-slate-800 p-4 flex flex-col justify-between mb-8 tablet:mb-0 tablet:mr-6">
       <p className="text-white font-medium">Recent Orders</p>
       <div className="w-full flex justify-between pt-2 text-neutral-300 font-thin p-2">
         <p className="w-full">Order #</p>

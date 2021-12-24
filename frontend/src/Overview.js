@@ -3,9 +3,9 @@ import { Cart, Receipt, ArrowRepeat, Wallet2 } from "react-bootstrap-icons";
 
 const Overview = () => {
   return (
-    <div className="p-8 pt-0 w-full flex justify-between text-white">
-      <div className="flex w-full flex-col mr-6 tablet:flex-row">
-        <div className="shadow-xl shadow-indigo-600/50 bg-gradient-to-r from-indigo-400 to-indigo-800 w-full mr-6 mb-6 rounded-lg p-4 tablet:mb-0">
+    <div className="p-8 pt-0 w-full flex flex-col justify-between text-white sm:flex-row">
+      <div className="flex w-full flex-col mr-0 tablet:flex-row mb-8 sm:mr-6 sm:mb-0">
+        <div className="shadow-xl shadow-indigo-600/50 bg-gradient-to-r from-indigo-400 to-indigo-800 w-full mr-0 mb-8 rounded-lg p-4 tablet:mb-0 sm:mr-6">
           <p className="font-medium">Orders Received</p>
           <div className="p-2 pt-4 pb-4 flex justify-between items-center">
             <Cart size={30} />
@@ -27,7 +27,7 @@ const Overview = () => {
         </div>
       </div>
       <div className="flex w-full flex-col tablet:flex-row">
-        <div className="shadow-xl shadow-fuchsia-600/50 shadow-netrual-900 bg-gradient-to-r from-fuchsia-400 to-fuchsia-800 w-full mr-6 mb-6 rounded-lg p-4 tablet:mb-0">
+        <div className="shadow-xl shadow-fuchsia-600/50 shadow-netrual-900 bg-gradient-to-r from-fuchsia-400 to-fuchsia-800 w-full mr-0 mb-8 rounded-lg p-4 tablet:mb-0 sm:mr-6">
           <p className="font-medium">Revenue</p>
           <div className="p-2 pt-4 pb-4 flex justify-between items-center">
             <ArrowRepeat size={30} />

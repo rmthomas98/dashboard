@@ -21,11 +21,7 @@ const data = [
 const Chart = () => {
   return (
     <div className="w-full bg-gradient-to-r from-slate-600 to-slate-800 h-96 rounded-lg p-4  flex flex-col justify-between tablet:w-3/5 tablet:mr-6">
-      <p className="text-white font-medium">
-        Sales This Week $2,650.00 (
-        <span className="text-emerald-400">+28.55%</span> compared to the
-        previous week)
-      </p>
+      <p className="text-white font-medium">Sales This Week $2,650.00</p>
       <div className="h-80">
         <ResponsiveContainer width="99%">
           <AreaChart data={data} margin={{ left: -10 }}>
