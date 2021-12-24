@@ -15,7 +15,7 @@ const data = [
 
 const PieChart = () => {
   return (
-    <div className="w-2/5 bg-slate-300 rounded-lg p-4 bg-gradient-to-r from-slate-600 to-slate-800 flex-col justify-between hidden tablet:flex">
+    <div className="w-2/5 rounded-lg p-4 bg-radial flex-col justify-between hidden tablet:flex">
       <p className="text-white font-medium">Traffic Source Analytics</p>
       <div className="h-60 w-11/12 mx-auto mt-6 drop-shadow-2xl flex flex-col justify-between">
         <ResponsiveContainer>

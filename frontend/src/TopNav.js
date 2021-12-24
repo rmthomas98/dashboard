@@ -17,9 +17,11 @@ const TopNav = () => {
   }, []);
 
   return (
-    <div className="w-full pl-8 pr-8 p-6 flex justify-between">
+    <div className="w-full p-4 flex justify-between sm:p-8 sm:pt-6 sm:pb-0">
       <div>
-        <p className="text-white font-semibold text-3xl pb-1">Account Overview</p>
+        <p className="text-white font-semibold text-3xl pb-1">
+          <span className="hidden sm:inline-block">Account</span> Overview
+        </p>
         <p className="text-sm font-medium text-neutral-400">
           {format(time, "MMMM, dd h:mm:ss aa")}
         </p>
@@ -30,7 +32,7 @@ const TopNav = () => {
           <Bell size={20} className="text-neutral-400" />
         </div>
         <div className="mr-5 relative pr-1">
-        <div className="h-2 w-2 rounded-full bg-fuchsia-400 absolute top-0 right-0 shadow-email-shadow"></div>
+          <div className="h-2 w-2 rounded-full bg-fuchsia-400 absolute top-0 right-0 shadow-notification-shadow"></div>
           <Envelope size={20} className="text-neutral-400" />
         </div>
         <img
@@ -39,7 +41,9 @@ const TopNav = () => {
           className="w-6 h-6 rounded-full mr-2"
         />
         <div className="flex items-center">
-          <p className="text-neutral-400 text-sm mr-1">My Account</p>
+          <p className="text-neutral-400 text-sm mr-1 hidden sm:block">
+            My Account
+          </p>
           <CaretDownFill className="text-neutral-400 text-xs" />
         </div>
       </div>

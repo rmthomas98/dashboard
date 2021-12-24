@@ -18,9 +18,9 @@ const data = [
   { date: "Dec, 15th", sales: 500 },
 ];
 
-const Chart = () => {
+const Chart = ({ width }) => {
   return (
-    <div className="w-full bg-gradient-to-r from-slate-600 to-slate-800 h-96 rounded-lg p-4  flex flex-col justify-between tablet:w-3/5 tablet:mr-6">
+    <div className="w-full bg-radial h-96 rounded-lg p-4  flex flex-col justify-between tablet:w-3/5 tablet:mr-6">
       <p className="text-white font-medium">Sales This Week $2,650.00</p>
       <div className="h-80">
         <ResponsiveContainer width="99%">
@@ -47,6 +47,7 @@ const Chart = () => {
               fontSize={12}
               tickMargin={10}
               minTickGap={0}
+              hide={width >= 640 ? false : true}
             />
             <YAxis
               dataKey="sales"

@@ -17,7 +17,7 @@ import {
 
 const Nav = () => {
   return (
-    <div className="bg-gradient-to-r from-slate-800 to-slate-700 border-opacity-25 min-w-fit h-screen overflow-y-auto pb-4 sticky top-0 scrollbar-hide shadow-nav-shadow xl:w-72 w-fit transition-all">
+    <div className="bg-slate-900 min-w-fit h-screen overflow-y-auto pb-4 sticky top-0 scrollbar-hide xl:w-72 w-fit transition-all hidden sm:block scrollbar scrollbar-thumb-slate-900 scrollbar-track-slate-400">
       <div className="flex items-center justify-center border-b border-neutral-100/20 m-4 mb-2 pb-6">
         <LayersHalf
           className="text-violet-400 relative top-1 xl:mr-2 mr-0"

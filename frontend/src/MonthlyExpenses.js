@@ -15,17 +15,19 @@ const data = [
 
 const MonthlyExpenses = () => {
   return (
-    <div className="h-72 w-full p-4 bg-gradient-to-r from-slate-600 to-slate-800 rounded-lg">
+    <div className="h-72 w-full p-4 bg-radial rounded-lg">
       <p className="font-medium text-white">Monthly Expenses</p>
       <div className="h-fill-container flex justify-between items-center flex-col">
         <div className="flex justify-between w-full pt-1 items-center">
           <p className="text-white font-thin text-sm pt-2 pb-1">
             Dec, 1 - Dec, 31
           </p>
-          <p className="text-white text-sm font-thin bg-slate-900/25 rounded-md w-fit pl-2 pr-2 pt-1 pb-1">
-            +10.7%
-          </p>
-          <p className="text-2xl text-rose-400">-$2,350.00</p>
+          <div className="flex items-center">
+            <p className="text-white text-sm font-thin bg-slate-700/50 rounded-md w-fit pl-2 pr-2 pt-1 pb-1 mr-2">
+              +10.7%
+            </p>
+            <p className="text-2xl text-rose-400">-$2,350.00</p>
+          </div>
         </div>
         <ResponsiveContainer width="99%" height="100%">
           <AreaChart data={data}>
