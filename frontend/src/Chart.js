@@ -47,7 +47,7 @@ const Chart = ({ width }) => {
               fontSize={12}
               tickMargin={10}
               minTickGap={0}
-              hide={width >= 640 ? false : true}
+              hide={false}
             />
             <YAxis
               dataKey="sales"
