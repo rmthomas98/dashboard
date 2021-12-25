@@ -20,11 +20,11 @@ const data = [
 
 const Chart = ({ width }) => {
   return (
-    <div className="w-full bg-radial h-96 rounded-lg p-4  flex flex-col justify-between tablet:w-3/5 tablet:mr-6">
+    <div className="w-full bg-radial h-72 rounded-lg p-4  flex flex-col justify-between tablet:w-3/5 tablet:mr-6 sm:h-96">
       <p className="text-white font-medium">Sales This Week $2,650.00</p>
       <div className="h-80">
-        <ResponsiveContainer width="99%">
-          <AreaChart data={data} margin={{ left: -10 }}>
+        <ResponsiveContainer width="99%" height="99%">
+          <AreaChart data={data} margin={{ left: -10, top: 10 }}>
             <defs>
               <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="5%" stopColor="#a78bfa" stopOpacity={0.7} />
@@ -59,7 +59,7 @@ const Chart = ({ width }) => {
               tickFormatter={(value) => `$${value}`}
               domain={["dataMin", "dataMax"]}
               ticks={[200, 300, 400, 500, 600]}
-              padding={{ bottom: 10 }}
+              padding={{ bottom: 10, top: 10 }}
             />
             <Tooltip
               content={<CustomTooltip />}
