@@ -39,8 +39,8 @@ const Orders = () => {
       </div>
       <div className="w-full flex justify-between p-2 text-white font-thin bg-slate-700/25 rounded-lg text-sm hover:bg-slate-700/50 transition-all cursor-pointer">
         <p className="w-full">10583</p>
-        <p className="w-full">45</p>
-        <p className="w-full">$1,098</p>
+        <p className="w-full">19</p>
+        <p className="w-full">$109</p>
         <p className="w-full flex items-center">
           <span className="h-2 w-2 bg-rose-400 block rounded-full mr-2 shadow-account-bar shadow-rose-400"></span>
           Canceled
